@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <title>API-WEB</title>
+</head>
+
+<body>
+  <div class="top-anim">
+    <div class="top-anim-line">
+      <span class="anim-line left"></span>
+      <span class="anim-line right"></span>
+    </div>
+  </div>
+  <header>
+    <div class="containerhome">
+      <div class="logo">API$WEB</div>
+
+      <nav class="nav-links" id="navLinks">
+        <div class="nv-close">
+
+        </div>
+        <a href="index.html">Home</a>
+        <a href="movie-search.html">Movies</a>
+        <a href="translator.html">Translator</a>
+        <a href="weather.html">Weather</a>
+      </nav>
+
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-layer-group"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="home-intro">
+    <div class="container">
+      <div class="animation">
+        <h1>Welcome to API$WEB</h1>
+        <p class="intro-p">
+          API$WEB is a small collection of web projects created using real APIs.
+          The main purpose of this project is to understand how APIs work,
+          how data is fetched from servers, and how it is shown on a web page
+          using JavaScript.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container projects-cont">
+
+      <div class="animation">
+        <a href="movie-search.html" class="project-link">
+          <div class="project-card">
+            <h2>🎬 Movie Search Application</h2>
+            <p>
+              This project allows users to search for movies and view the top 20 movies.
+              Movie data such as title, poster, release year, and ratings are fetched
+              from a movie API. This project helps in understanding API fetching,
+              search functionality, and dynamic content rendering.
+            </p>
+          </div>
+      </div>
+      </a>
+
+      <div class="animation">
+        <a href="translator.html" class="project-link">
+          <div class="project-card">
+            <h2>🌐 Text Translator</h2>
+            <p>
+              The text translator project allows users to convert text from one
+              language to another. It uses a translation API to process the input
+              text and display the translated output. This project focuses on form
+              handling, API requests, and real-time data processing.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="animation">
+        <a href="weather.html" class="project-link">
+          <div class="project-card">
+            <h2>⛅ Weather Application</h2>
+            <p>
+              This weather app shows real-time weather information of any city.
+              Users can search for a city and get details like temperature,
+              weather condition, humidity, and wind speed. This project demonstrates
+              how live data is fetched and updated on a web page.
+            </p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <div class="container">
+      <p>
+        © <span id="year"></span> API$WEB • Built with ❤️ by Abhishek Kumawat
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

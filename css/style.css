@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #152343 !important;
+  color: #e5e7eb;
+}
+
+.containerhome {
+  max-width: 1300px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 15px 20px;
+}
+
+/* Header */
+header {
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background: #020617;
+  z-index: 999;
+  animation: headerJump 1.2s;
+  pointer-events: auto;
+}
+
+@keyframes headerJump {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+
+  35% {
+    transform: translateY(15px);
+    opacity: 1;
+  }
+
+  55% {
+    transform: translateY(-10px);
+  }
+
+  75% {
+    transform: translateY(6px);
+  }
+
+  90% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.top-anim {
+  z-index: 100;
+  pointer-events: auto;
+}
+
+.top-anim-line {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.anim-line {
+  width: 4px;
+  height: 50px;
+  background: #38bdf8;
+  transform-origin: top;
+  animation: lineDrop 1.2s ease forwards;
+}
+
+@keyframes lineDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px) scaleY(0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(10px) scaleY(1.1);
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #38bdf8;
+  animation-delay: 300ms !important;
+  animation: logoFade 1.4s ease forwards;
+  opacity: 0;
+}
+
+@keyframes logoFade {
+  from {
+    opacity: 0;
+    letter-spacing: 10px;
+  }
+
+  to {
+    opacity: 1;
+    letter-spacing: 2px;
+  }
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  animation-delay: 300ms !important;
+  opacity: 0;
+  animation: logoFade 1.4s ease forwards;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 16px;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #38bdf8;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Toggle button */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #38bdf8;
+}
+
+/* project cards css */
+.animation {
+  animation-delay: 300ms !important;
+  animation: contfade 1.2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes contfade {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+
+  35% {
+    transform: translateY(15px);
+    opacity: 0.6;
+  }
+
+  55% {
+    opacity: 0.7;
+    transform: translateY(-10px);
+  }
+
+  75% {
+    opacity: 0, 8;
+    transform: translateY(6px);
+  }
+
+  90% {
+    opacity: 0.9;
+    transform: translateY(-3px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-intro .container {
+  padding: 100px 30px 0px 30px;
+  color: white;
+  text-align: center;
+}
+
+.intro-p {
+  margin-top: 20px;
+  padding: 0px 200px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.projects-cont {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-card {
+  background: #1e293b;
+  color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card p {
+  margin-top: 20px;
+}
+
+.app-footer {
+  background: #020617;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 60px;
+  animation: contfade 1.2s ease forwards;
+  opacity: 0;
+}
+
+.app-footer .container {
+  padding: 25px 10px;
+  text-align: center;
+}
+
+.app-footer p {
+  color: #94a3b8;
+  font-size: 14px;
+  margin: 0;
+}
+
+.app-footer p span,
+.app-footer p strong {
+  color: #38bdf8;
+}
